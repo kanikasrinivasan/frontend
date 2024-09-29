@@ -20,7 +20,7 @@ const Create = () => {
       const handleFormSubmit = async(e)=>{
         e.preventDefault();
         await axios
-          .post(`https://ecomm-backend-oc1a.onrender.com//api/products/`, editData)
+          .post(`https://ecomm-backend-oc1a.onrender.com/api/products/`, editData)
           .then((res) => console.log(res.data.result))
           .catch((err) => console.log(err));
 
